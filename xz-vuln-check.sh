@@ -1,4 +1,4 @@
-$OUTPUT=$(apt list --installed | grep liblzma) #>2/dev/null | grep liblzma | cut -d' ' -f2 | cut -d'-' -f1)
+$OUTPUT=$(apt list --installed | grep liblzma >2 /dev/null | grep liblzma | cut -d' ' -f2 | cut -d'-' -f1)
 echo $OUTPUT
 
 $RESULT=$?
